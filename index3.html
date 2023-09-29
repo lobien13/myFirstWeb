@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/conf/styles.css">
+    <style>
+        /* Agregamos estilos CSS para la animación del menú desplegable */
+        .card__content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .card__content.active {
+            max-height: 500px; /* Altura deseada del menú desplegable */
+            transition: max-height 0.3s ease;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"</a>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="index2.html">Información</a>
+            <a href="index3.html">Servicios</a>
+            <a href="#">Contacto</a>
+            <button id="login-btn" class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="wrapper">
+            <span class="icon-close">
+                <i class='bx bx-x-circle'></i>
+            </span>
+            <div class="logreg-box">
+                <div class="form-box login">
+                    <div class="logreg-title" id="login-title">
+                        <h2>Login</h2>
+                        <p>Haz el login para poder acceder</p>
+                    </div>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"> <i class='bx bx-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Contraseña</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Acuérdate de mí</label>
+                            <a href="#">Me he olvidado</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="logreg-link">
+                            <p>¿No tienes cuenta? <a href="#" class="register-link">Regístrate</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-box register">
+                    <div class="logreg-title">
+                        <h2>Registro</h2>
+                        <p>Dame la siguiente información para verificar tu identidad</p>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-user'></i></span>
+                            <input type="text" required>
+                            <label>Nombre completo</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Contraseña</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Acepto sin mirar los términos y condiciones</label>
+                        </div>
+                        <button type="submit" class="btn">Registro</button>
+                        <div class="logreg-link">
+                            <p>¿Ya tienes cuenta? <a href="#" class="login-link">Inicia sesión</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="card__container">
+            <article class="card__article">
+                <div class="card__scale-1"></div>
+                <div class="card__scale-2"></div>
+                <div class="card__shape-1">
+                    <div class="card__shape-2"></div>
+                    <div class="card__shape-3">
+                        <i class="ri-flashlight-line card__icon"></i>
+                    </div>
+                </div>
+                <div class="card__data">
+                    <h2 class="card__title">Eficiente</h2>
+                    <p class="card__description">
+                        Eficiencia y optimización
+                    </p>
+                    <a href="#" class="card__button">Continuar leyendo</a>
+                    <div class="card__content">
+                        <p class="card__extra-info">
+                            Las IAs son altamente eficientes para solucionar errores debido a su capacidad para procesar grandes cantidades de datos rápidamente, aprender de los errores
+                             y tomar decisiones precisas en tiempo real.
+                              Además, pueden automatizar tareas, lo que acelera la resolución de problemas..
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card__article card__orange">
+                <div class="card__scale-1"></div>
+                <div class="card__scale-2"></div>
+                <div class="card__shape-1">
+                    <div class="card__shape-2"></div>
+                    <div class="card__shape-3">
+                        <i class="ri-fire-line card__icon"></i>
+                    </div>
+                </div>
+                <div class="card__data">
+                    <h2 class="card__title">Óptimo</h2>
+                    <p class="card__description">
+                        Alta capacidad de procesamiento
+                    </p>
+                    <a href="#" class="card__button">Continuar leyendo</a>
+                    <div class="card__content">
+                        <p class="card__extra-info">
+                            Las IAs destacan por su capacidad óptima de procesamiento. Gracias a su capacidad para manejar y analizar grandes volúmenes de datos, las IAs pueden realizar cálculos complejos y algoritmos sofisticados de manera rápida y eficiente.
+                             Esto les permite obtener resultados precisos y tomar decisiones informadas en tiempo récord.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card__article card__green">
+                <div class="card__scale-1"></div>
+                <div class="card__scale-2"></div>
+                <div class="card__shape-1">
+                    <div class="card__shape-2"></div>
+                    <div class="card__shape-3">
+                        <i class="ri-shining-line card__icon"></i>
+                    </div>
+                </div>
+                <div class="card__data">
+                    <h2 class="card__title">Resolutivo</h2>
+                    <p class="card__description">
+                        Resultados limpios de errores
+                    </p>
+                    <a href="#" class="card__button">Continuar leyendo</a>
+                    <div class="card__content">
+                        <p class="card__extra-info">
+                            Las IAs son altamente resolutivas, ya que ofrecen resultados libres de errores. A través del aprendizaje automático y la capacidad para reconocer patrones y anomalías, las IAs pueden identificar y corregir errores de manera eficaz. Esto ayuda a mejorar la calidad y la precisión de los resultados,
+                             permitiendo una toma de decisiones más confiable y una resolución efectiva de problemas.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // JavaScript para agregar la funcionalidad del menú desplegable
+        const buttons = document.querySelectorAll('.card__button');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const cardContent = button.nextElementSibling;
+                cardContent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+

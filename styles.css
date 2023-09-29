@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --white-color: #fff;
+    --black-color: hsl(210,12%,15%);
+    --body-color: hsl(210,16%,12%);
+    --container-color: hsl(210,24%,8%);
+
+    --body-font: "Poppins", sans-serif;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --h2-font-size: 1.5rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*==Tarjeta==*/
+
+.container {
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+}
+
+.card__container,
+.card__article {
+    display: grid;
+    gap: 2rem;
+}
+
+.card__container {
+    padding-block: 4.5rem;
+}
+
+.card__article {
+    --hue-1: 210;
+    --hue-2: 238;
+    position: relative;
+    justify-items: center;
+    color: var(--white-color);
+    text-align: center;
+    padding: 4rem 2rem 3rem;
+}

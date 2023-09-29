@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="text-box">
+        <p>Sin fallo</p>
+        <h1>Cybr.IA</h1>
+        <h3>Soluciones inteligentes </h3>
+
+        <div class="row">
+            <a href="https://chat.openai.com/">Prueba el chat</a>
+        <a href="https://www.linkedin.com/in/diegorocacosta/">Conecta conmigo<span>&#x27F6</span></a>
+        <span>Si quieres saber más sobre todo<br>aquello que puedo ofrecer y podemos lograr </span>
+        </div> 
+    </div>
+    <header class="header">
+        <a href="#" class="logo">Cybr.IA</a>
+
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="index2.html">Información</a>
+            <a href="index3.html">Servicios</a>
+            <a href="#">Contacto</a>
+            <button id="login-btn" class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="wrapper">
+            <span class="icon-close">
+                <i class='bx bx-x-circle'></i>
+            </span>
+            <div class="logreg-box">
+                <div class="form-box login">
+                    <div class="logreg-title" id="login-title">
+                        <h2>Login</h2>
+                        <p>Haz el login para poder acceder</p>
+                    </div>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"> <i class='bx bx-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Contraseña</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label> <input type="checkbox">Acuérdate de mí</label>
+                            <a href="#">Me he olvidado</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="logreg-link">
+                            <p>¿No tienes cuenta? <a href="#" class="register-link">Regístrate</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-box register">
+                    <div class="logreg-title">
+                        <h2>Registro</h2>
+                        <p>Dame la siguiente información para verificar tu identidad</p>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"> <i class='bx bx-user'></i></span>
+                            <input type="text" required>
+                            <label>Nombre completo</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"> <i class='bx bx-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Contraseña</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label> <input type="checkbox">Acepto sin mirar los términos y condiciones</label>
+                        </div>
+                        <button type="submit" class="btn">Registro</button>
+                        <div class="logreg-link">
+                            <p>¿Ya tienes cuenta? <a href="#" class="login-link">Inicia sesión</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="media-options">
+                <a href="#">
+                    <i class='bx bxl-google'></i>
+                    <span>Login con Google</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-meta'></i>
+                    <span>Login con Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
